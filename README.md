@@ -24,8 +24,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 Para usar <TodoList>, siga estas etapas:
 
 ```
-<yarn install>
+<git clone <link do repositório>>
 <cd todo>
+<yarn install>
 <yarn start>
 ```
 ## 🤝 Colaboradores
