@@ -47,6 +47,6 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [MIT](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [MIT](LICENSE) para mais detalhes.
 
 [⬆ Voltar ao topo](#TodoList)<br>
