@@ -22,7 +22,7 @@ const TodoList = () => {
         {
           // coalescência nula(?), caso a variavel for nula, nao vai dar erro.
           todos?.map(
-            todo => (<TodoListItem key={todo.id}></TodoListItem>)
+            todo => (<TodoListItem key={todo.id} todo={todo}></TodoListItem>)
           )
         }
       </tbody>
