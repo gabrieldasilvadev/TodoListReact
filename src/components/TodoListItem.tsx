@@ -6,10 +6,13 @@ interface TodoListItemProps {
 }
 
 const TodoListItem = (props: TodoListItemProps) => {
-  
+  const onRemove = (todo: Todo) => {
+    console.log(todo);
+  };
+
   const handleChange = (e: any) => {
-    console.log('mudou');
-  }
+    console.log("mudou");
+  };
 
   return (
     <tr className="uk-animation-slide-bottom-medium">
@@ -28,6 +31,7 @@ const TodoListItem = (props: TodoListItemProps) => {
         <button
           className="uk-icon-button uk-button-danger"
           uk-icon="trash"
+          onClick={() => onRemove(props.todo)}
         ></button>
       </td>
     </tr>
