@@ -4,7 +4,7 @@ import TodoListItem from './TodoListItem';
 
 const TodoList = () => {
   const todos: Todo[] = [
-    {id: 1, title: 'Estudar React', done: false},
+    {id: 1, title: 'Estudar React', done: true},
     {id: 2, title: 'Estudar Java', done: false},
   ];
 
