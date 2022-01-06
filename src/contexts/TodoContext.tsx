@@ -3,16 +3,18 @@ import { Todo } from "../models/Todo";
 import { TodoContextType } from "./TodoContextType";
 
 export const TodoContext = createContext<TodoContextType>({
-  todos: [
-    { id: 1, title: "Estudar React", done: true },
-    { id: 2, title: "Estudar Java", done: false },
-  ],
+  todos: [],
   addTodo: () => {},
   removeTodo: () => {},
   toggle: () => {},
 });
 
 const TodoProvider = (props: any) => {
+  const todos: Todo[] = [
+    { id: 1, title: "Estudar React", done: true },
+    { id: 2, title: "Estudar Java", done: false },
+  ];
+
   const addTodo = (title: string) => {
     console.log(`Adicionou ${title}`);
   };
