@@ -1,6 +1,6 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import { Todo } from "../models/Todo";
-import { get } from "../services/TodoService";
+import { get, save } from "../services/TodoService";
 import { TodoContextType } from "./TodoContextType";
 
 export const TodoContext = createContext<TodoContextType>({
@@ -12,6 +12,10 @@ export const TodoContext = createContext<TodoContextType>({
 
 const TodoProvider = (props: any) => {
   const [todos, setTodos] = useState<Todo[]>(get);
+
+  useEffect(() => {
+    save(todos);
+  }, [todos]);
 
   const addTodo = (title: string) => {
     const todo: Todo = { id: todos.length + 1, title: title, done: false };
