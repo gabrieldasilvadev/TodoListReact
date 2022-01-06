@@ -1,11 +1,9 @@
-import React from "react";
-import { createContext } from "vm";
+import React, { createContext } from "react";
 import { TodoContextType } from "./TodoContextType";
 
-export const TodoContext = () =>
-  createContext<TodoContextTypepe>({
-    todos: [],
-    addTodo: () => {},
-    removeTodo: () => {},
-    toddle: () => {},
-  });
+export const TodoContext = createContext<TodoContextType>({
+  todos: [],
+  addTodo: () => {},
+  removeTodo: () => {},
+  toggle: () => {},
+});
