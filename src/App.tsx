@@ -15,7 +15,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<TodoList />}></Route>
 
-            <Route path="/create" element={<AddTodo />}></Route>
+            <Route path="/create" element={<AddTodo/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
