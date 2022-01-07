@@ -18,7 +18,7 @@ interface AddTodoForm {
 
 const AddTodo = () => {
   const { addTodo } = useContext<TodoContextType>(TodoContext);
-  const { register, handleSubmit } = useForm({
+  const { register, handleSubmit, formState:{ errors } } = useForm({
     resolver: yupResolver(schema),
   });
 
@@ -42,12 +42,14 @@ const AddTodo = () => {
         />
         <span>
           <small>
-            <strong className="uk-text-danger"></strong>
+            <strong className="uk-text-danger">{errors.title?.message}</strong>
           </small>
         </span>
       </div>
       <div className="uk-width-1-1">
-        <button type="submit" className="uk-button uk-button-primary">Enviar</button>
+        <button type="submit" className="uk-button uk-button-primary">
+          Enviar
+        </button>
       </div>
     </form>
   );
