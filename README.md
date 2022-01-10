@@ -44,6 +44,6 @@ WIndows, Linux e macOS:
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [MIT](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [MIT](LICENSE) para mais detalhes.
 
 [⬆ Voltar ao topo](#MiMemories)<br>
