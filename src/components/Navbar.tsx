@@ -7,11 +7,11 @@ const Navbar = () => {
       <nav className="uk-navbar">
         <div className="uk-navbar-left">
           <Link to="/" className="uk-navbar-item uk-logo">
-            My Todos
+            <h2><strong>Minhas tarefas</strong></h2>
           </Link>
         </div>
 
-        <div className="uk-navbar-right">
+        <div className="uk-navbar-right uk-animation-slide-top">
           <ul className="uk-navbar-nav">
             <li>
               <Link to="/create">

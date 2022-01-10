@@ -8,7 +8,7 @@ import { TodoContextType } from "../contexts/TodoContextType";
 const schema = yup
   .object()
   .shape({
-    title: yup.string().required("Tarefa invalida"),
+    title: yup.string().required("Adicione uma descrição para a tarefa"),
   })
   .required();
 
@@ -18,7 +18,11 @@ interface AddTodoForm {
 
 const AddTodo = () => {
   const { addTodo } = useContext<TodoContextType>(TodoContext);
-  const { register, handleSubmit, formState:{ errors } } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: yupResolver(schema),
   });
 
